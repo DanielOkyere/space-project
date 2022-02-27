@@ -1,29 +1,41 @@
-
-  <nav role="navigation" class="navbar navbar-expand-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/assets/home/space_logo.svg" alt="" width="30" height="24" />
+<nav role="navigation" class="navbar navbar-expand-sm">
+  <div class="container-fluid row">
+    <div class="col">
+      <a class="navbar-brand" routerLink="/home">
+        <img src="/assets/home/space_logo.svg" alt="" width="20em" height="20em" />
       </a>
-      <ul class="navbar-nav navigation-icons">
-        <li class="nav-item">
-          <a href="#" class="navlink active">
-            <span class="navigation-number" style="font-weight: bold;">00</span>
+    </div>
+    <button class="navbar-toggler offset-6 d-sm-none" type="button" (click)="navbarCollapsed = !navbarCollapsed"
+    [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list"
+      viewBox="0 0 16 16" class="navbar-toggler-icon">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+    </svg>
+  </button>
+    <div class=" offset-2 col-sm-8">
+
+      <ul class="navbar-nav collapse navbar-collapse row" [ngbCollapse]="navbarCollapsed" id="navbarTogglerDemo01">
+        <li class="nav-item col-sm-3">
+          <a routerLink="/home" class="navlink">
+            <span class="navigation-number" style="font-weight: bold">00</span>
             <span class="navigation-text">HOME</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="#" class="navlink">
+        <li class="nav-item col-sm-3">
+          <a routerLink="/destination" class="navlink">
             <span class="navigation-number">01</span>
             <span class="navigation-text">DESTINATION</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-sm-3">
           <a href="#" class="navlink">
             <span class="navigation-number">02</span>
             <span class="navigation-text">CREW</span>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-sm-3">
           <a href="#" class="navlink">
             <span class="navigation-number">03</span>
             <span class="navigation-text">TECHNOLOGY</span>
@@ -31,7 +43,5 @@
         </li>
       </ul>
     </div>
-
-  </nav>
-
-
+  </div>
+</nav>

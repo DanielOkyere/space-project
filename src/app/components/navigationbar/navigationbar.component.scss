@@ -1,20 +1,12 @@
 @import '/src/styles.scss';
 
 .navigation-number{
-  font-size: large;
-  font-weight: 200;
+  font-size: 20px;
+  font-weight: bolder !important;
   color: $white-color;
 }
 .nav-item{
   padding: 15px;
-  border: 10px;
-}
-.navigation-icons{
-background: rgba(38, 38, 38, 0.34);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.5px);
--webkit-backdrop-filter: blur(6.5px);
-border: 1px solid rgba(38, 38, 38, 0.05);
 }
 .nav-item:hover{
   background-color: #616476;
@@ -23,9 +15,8 @@ border: 1px solid rgba(38, 38, 38, 0.05);
 }
 .navigation-number, .navigation-text{
   font-family: $secondary-font, sans-serif;
-  padding:5px;
   color: white;
   text-align: center;
   margin-top: 10%;
-  padding: auto;
+  padding: 2px;
 }

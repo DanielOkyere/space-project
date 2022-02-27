@@ -1,43 +1,28 @@
 @import "/src/styles.scss";
-
-#hero-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-top: 35%;
+#home-container{
+  height: 100vh;
+  width: 100vw;
 }
-#hero-text {
-  font-family: $secondary-font, serif !important;
-  font-size: larger;
+
+p {
+  font-family: $secondary-font, serif;
   font-weight: 400;
   color: #ffffff;
-  text-align: left;
-  margin-top: 5%;
 }
 
 h1 {
   font-family: $primary-font, serif;
-  font-size: 150px;
-  font-weight: 400;
   color: $white-color;
-  text-align: left;
-  margin-top: 5%;
 }
 
 h3 {
   font-family: $secondary-font;
-  font-size: 28px;
-  font-weight: 56px;
   color: $white-color;
-  text-align: left;
-  margin-top: 10%;
 }
 
+//large screen size (desktop)
 @media screen and (min-width: 760px) {
   #home-container {
-    height: 100%;
-    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     background-image: url("/assets/home/background-home-desktop.jpg");
@@ -46,27 +31,23 @@ h3 {
   }
 }
 
-@media screen and (max-width: 760px) {
+//medium screen size (tablet)
+@media screen and (max-width: 600px) {
   #home-container {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
+    overflow-x: hidden;
     background-image: url("/assets/home/background-home-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     flex-direction: column;
   }
 }
 
+//Small screen size (mobile)
 @media screen and (max-width: 480px) {
   #home-container {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
+    overflow-x: hidden;
     background-image: url("/assets/home/background-home-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
-
 }
