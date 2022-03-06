@@ -1,0 +1,24 @@
+<h3>
+  {{ pageTitle }}
+</h3>
+
+<div class="row"*ngFor="let content of pageContent ">
+<div class="col" >
+  <img src="{{content.imgString}}" alt="{{content.title}}">
+</div>
+<div class="col">
+  <div *ngFor="let pageItem of pageItemNavigation">
+    {{ pageItem }}
+  </div> 
+  <h1>{{content.title}}</h1>
+  <p>{{content.description}}</p>
+  <div class="row">
+    <div class="col">
+      {{content.distance}}
+    </div>
+    <div class="col">
+      {{content.time}}
+    </div>
+  </div>
+</div>
+</div>

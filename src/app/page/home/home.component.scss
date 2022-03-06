@@ -4,22 +4,6 @@
   width: 100vw;
 }
 
-p {
-  font-family: $secondary-font, serif;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-h1 {
-  font-family: $primary-font, serif;
-  color: $white-color;
-}
-
-h3 {
-  font-family: $secondary-font;
-  color: $white-color;
-}
-
 
 //large screen size (desktop)
 @media screen and (min-width: 760px) {
@@ -37,7 +21,7 @@ h3 {
 }
 
 //medium screen size (tablet)
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   #home-container {
     overflow-x: hidden;
     background-image: url("/assets/home/background-home-tablet.jpg");

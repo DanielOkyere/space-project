@@ -1,0 +1,39 @@
+@import "/src/styles.scss";
+
+
+
+@media screen and (min-width: 760px) {
+  #destination-content {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url("/assets/destination/background-destination-desktop.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+//medium screen size (tablet)
+@media screen and (max-width: 760px) {
+  #destination-content {
+    overflow-x: hidden;
+    background-image: url("/assets/destination/background-destination-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+}
+
+//Small screen size (mobile)
+@media screen and (max-width: 480px) {
+  #destination-content {
+    overflow-x: hidden;
+    background-image: url("/assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

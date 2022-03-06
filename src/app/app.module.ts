@@ -7,13 +7,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavigationbarComponent } from './components/navigationbar/navigationbar.component';
 import { HomeComponent } from './page/home/home.component';
 import { DestinationComponent } from './page/destination/destination.component';
+import { PageTemplateComponent } from './components/page-template/page-template.component';
+import { MiniNavigatorComponent } from './components/mini-navigator/mini-navigator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
     HomeComponent,
-    DestinationComponent
+    DestinationComponent,
+    PageTemplateComponent,
+    MiniNavigatorComponent
   ],
   imports: [
     BrowserModule,
