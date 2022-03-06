@@ -11,18 +11,18 @@ $primary-font: 'Bellefair', serif;
 $secondary-font: 'Barlow Condensed', sans-serif;
 $navbar-color:#808080;
 
-body{
+body, html{
   background-color: #0B0D17 !important;
 }
 
 p {
   font-family: $secondary-font, serif;
   font-weight: 400;
-  color: #ffffff;
+  color: $white-color;
 }
 
 h1 {
-  font-family: $primary-font, serif;
+  font-family: $primary-font;
   color: $white-color;
 }
 

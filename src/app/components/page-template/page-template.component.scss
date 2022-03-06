@@ -1,0 +1,25 @@
+@import "/src/styles.scss";
+.average-text{
+font-family: $primary-font;
+color: $white-color;
+font-size: 7px;
+}
+.min-nav-links{
+  color:$white-color;
+  font-family: $primary-font;
+  font-size: 10px;
+  padding: 5px;
+}
+.content-description{
+  border: 2px;
+  border-color: $white-color;
+}
+.content-value{
+  font-family: $primary-font;
+  color: $white-color;
+  font-size: 15px;
+}
+
+.page-title{
+  font-size: 30px;
+}
